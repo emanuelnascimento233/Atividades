@@ -1,0 +1,463 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil\fcharset0 Arial;}}
+{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\sa200\sl276\slmult1\qc\lang22\f0\fs32 EXERCICIOS FACCAT\par
+\pard\sa200\sl276\slmult1\fs22\par
+\b\f1\fs24 5- //Descreva um algoritmo para ler um valor(do teclado)e escrever (na tela)o seu antecessor .\par
+\b0\par
+\fs22 package ExercicioFacct;\par
+ \par
+import java.util.Scanner;\par
+public class Exercicio5 \{\par
+\tab\par
+\tab public static void main(String[]args) \{\par
+\tab\tab Scanner sc=new Scanner(System.in);\par
+\tab\tab System.out.println("Digite um valor n\'famerico: ");\par
+\tab\tab int valor=sc.nextInt();\par
+\tab\tab int atc=valor-1;\par
+\tab\tab System.out.println("O antecessor do n\'famero digitado \'e9: " +atc);\par
+\tab\tab sc.close();\par
+\tab\tab\par
+\tab\}\par
+\tab\par
+ \par
+\}\par
+\fs24\par
+\b 6- Escreva um algoritmo para ler as dimens\'f5es ret\'e2nguloo seu antecessor. Ret\'e2ngulo (base e altura), calcular e escrever a \'e1rea do ret\'e2ngulo.\par
+\b0  \par
+\fs22 package ExercicioFacct;\par
+ \par
+import java.util.Scanner;\par
+ \par
+public class Exercicio6 \{\par
+\tab public static void man(String[]args) \{\par
+\tab\tab Scanner sc=new Scanner(System.in);\par
+\tab\tab System.out.println("Digite o valor da base do ret\'e2ngulo:");\par
+\tab\tab double valor1=sc.nextDouble();\par
+\tab\tab System.out.println("Digite o valor da altura do ret\'e2ngulo:");\par
+\tab\tab double valor2=sc.nextDouble();\par
+\tab\tab double area=valor1*valor2;\par
+\tab\tab System.out.println("A \'e1rea do seu ret\'e3ngulo \'e9:" +area);\par
+\tab\tab  sc.close();\par
+\tab\}\par
+\par
+ \par
+\}\par
+\fs24\par
+\b 7) Fa\'e7a um algoritmo que leia a idade de uma pessoa expressa em anos, meses e dias e escreva a idade dessa pessoa expressa apenas em dias. Considerar ano com 365 dias e m\'eas com 30 dias. \par
+\b0\fs22 package ExercicioFacct;\par
+ \par
+import java.util.Scanner;\par
+ \par
+public class Exercicio7 \{\par
+\tab public static void main(String[]args)\{\par
+\tab\tab\par
+\tab\tab Scanner sc=new Scanner(System.in);\par
+\tab\tab System.out.println("Digite a idade de uma pessoa em anos: ");\par
+\tab\tab int valor1=sc.nextInt();\par
+\tab\tab System.out.println("Digite a idade de uma pessoa em meses: ");\par
+\tab\tab int valor2=sc.nextInt();\par
+\tab\tab System.out.println("Digite a idade de uma pessoa em dias: ");\par
+\tab\tab int valor3=sc.nextInt();\par
+\tab\tab\par
+\tab\tab int anos=valor1*365;\par
+\tab\tab int meses=valor2*30;\par
+\tab\tab int dias=anos+meses+valor3;\par
+\tab\tab\par
+\tab\tab System.out.println("O valor dessa pessoa expressa em dias \'e9:" +dias);\par
+\tab\tab sc.close();\par
+\tab\tab\par
+\tab\}\b\par
+ \f0\par
+\}\par
+\par
+\f1\fs24 8) Escreva um algoritmo para ler o n\'famero total de eleitores de um munic\'edpio, o n\'famero de votos brancos, nulos e v\'e1lidos. Calcular e escrever o percentual que cada um representa em rela\'e7\'e3o ao total de eleitores.\par
+\b0\fs22 package ExercicioFacct;\par
+ \par
+import java.util.Scanner;\par
+ \par
+public class Exercicio8 \{\par
+ \par
+public static void main(String[] args) \{\par
+ \par
+\tab Scanner sc=new Scanner(System.in);\par
+\tab System.out.println("Digite a quantidade total de eleitores do municipio: "); \tab\tab int quantidadeTotalEleitores=sc.nextInt();\par
+\par
+\tab System.out.println("Digite a quantidade de votos Brancos: ");\tab\par
+\tab int quantidadeVotosBrancos=sc.nextInt();\par
+\tab System.out.println("Digite a quantidade de votos Nulos: ");\par
+ \par
+\tab int quantidadeVotosNulos=sc.nextInt();\par
+ \par
+\tab System.out.println("Digite a quantidade total de votos v\'e1lidos: ");\par
+ \par
+\tab int quantidadeVotosValidos=sc.nextInt();\par
+ \par
+\tab float porcentagemVotos= quantidadeTotalEleitores/quantidadeVotosValidos*100;\par
+ \par
+\tab System.out.println("A porcentagem de total de eleitores \'e9: "+porcentagemVotos+"%");\par
+ \tab float porcentagemVotosBrancos= quantidadeVotosBrancos/quantidadeVotosValidos*100;\par
+ \par
+\tab System.out.println("A porcentagem de votos brancos \'e9: "+porcentagemVotosBrancos+"%");\par
+ \par
+\tab float porcentagemVotosNulos= quantidadeVotosNulos/quantidadeVotosValidos*100;\par
+ \par
+\tab System.out.println("A porcentagem de votos Nulos \'e9: "+porcentagemVotosNulos+"%");\par
+ \par
+\tab\tab sc.close();\par
+ \par
+\tab\}\par
+ \par
+ \par
+\}\par
+\fs24\par
+\b 9) Escreva um algoritmo para ler o sal\'e1rio mensal atual de um funcion\'e1rio e o percentual de reajuste.Calcular e escrever o valor do novo sal\'e1rio. \b0\par
+\fs22 package ExercicioFacct;\par
+ \par
+import java.util.Scanner;\par
+ \par
+public class Exercicios9 \{\par
+ \par
+\tab public static void main(String[] args) \{\par
+\tab\tab Scanner sc = new Scanner(System.in);\par
+\tab\tab System.out.print("Digite o seu salario mensal atual: R$");\par
+\tab\tab float salario =sc.nextFloat();\par
+\tab\tab System.out.print("Digite a porcentagem % de reajuste do seu salario:");\par
+\tab\tab float porcentagem =sc.nextFloat();\par
+\tab\tab float aumentoReal=salario*porcentagem/100;\par
+\tab\tab float salarioFinal=aumentoReal+salario;\par
+\tab\tab System.out.print("O valor do novo salario \'e9: R$" +salarioFinal);\par
+\tab\tab sc.close();\par
+\par
+ \par
+\tab\}\par
+ \par
+\}\par
+\fs24\par
+\b 10) O custo de um carro novo ao consumidor \'e9 a soma do custo de f\'e1brica com a porcentagem do distribuidor e dos impostos (aplicados ao custo de f\'e1brica). Supondo que o percentual do distribuidor seja de 28% e os impostos de 45%, escrever um algoritmo para ler o custo de f\'e1brica de um carro, calcular e escrever o custo final ao consumidor. \par
+\b0 package ExercicioFacct;\par
+ \par
+import java.util.Scanner;\par
+ \par
+public class Exercicio10 \{\par
+ \par
+\tab public static void main(String[] args) \{\par
+\tab\par
+\tab\tab Scanner sc=new Scanner(System.in);\par
+\tab\tab System.out.print("O valor do custo de fabrica\'e7\'e3o do automavel: R$");\par
+\tab\tab float valorAutomovel=sc.nextFloat();\par
+\tab\tab float distribuidor=valorAutomovel*28/100;\par
+\tab\tab float imposto=valorAutomovel*45/100;\par
+\tab\tab float custoFinal=valorAutomovel+distribuidor+imposto;\par
+\tab\tab System.out.print("O valor do automovel corresponde a: R$"+custoFinal);\par
+\tab\tab sc.close();\par
+ \par
+\tab\}\par
+ \par
+\}\par
+\par
+\b 11) Uma revendedora de carros usados paga a seus funcion\'e1rios vendedores um sal\'e1rio fixo por m\'eas, mais uma comiss\'e3o tamb\'e9m fixa para cada carro vendido e mais 5% do valor das vendas por ele efetuadas. Escrever um algoritmo que leia o n\'famero de carros por ele vendidos, o valor total de suas vendas, o sal\'e1rio fixo e o valor que ele recebe por carro vendido. Calcule e escreva o sal\'e1rio final do vendedor. \par
+\b0\fs22 package ExercicioFacct;\par
+ \par
+import java.util.Scanner;\par
+ \par
+public class Exercicio11 \{\par
+ \par
+\tab public static void main(String[] args) \{\par
+\tab\tab\par
+\tab\tab Scanner sc=new Scanner(System.in);\par
+\tab\tab\par
+\tab\tab System.out.print("Digite o valor do seu salario fixo por mes: R$");\par
+\tab\tab float salarioFixo=sc.nextFloat();\par
+\tab\tab System.out.print("Digite o valor da sua comissao que recebe por cada carro vendido:");\par
+\tab\tab float comissaoFixa=sc.nextFloat();\par
+\tab\tab System.out.print("Digite a quantidade de carros vendidos por mes:");\par
+\tab\tab float quantidadeCarros=sc.nextFloat();\par
+\tab\tab System.out.print("Digite o valor total vendido no mes:");\par
+\tab\tab float valorTotal=sc.nextFloat();\par
+\tab\tab float totalComissao=quantidadeCarros*comissaoFixa;\par
+\tab\tab float porcentagemValor=valorTotal*5/100;\par
+\tab\tab float valorFinal=salarioFixo+totalComissao+porcentagemValor;\par
+\tab\tab System.out.print("O valor final do salario corresponde a: R$ " +valorFinal);\par
+\tab\tab sc.close();\par
+\tab\tab\par
+\tab\}\par
+\tab\tab\par
+\}\par
+\fs24\par
+\b 14) Ler um valor e escrever a mensagem \'c9 MAIOR QUE 10! se o valor lido for maior que 10, caso contr\'e1rio escrever N\'c3O \'c9 MAIOR QUE 10! \par
+\b0\fs22 package ExercicioFacct;\par
+ \par
+import java.util.Scanner;\par
+ \par
+public class Exercicio14 \{\par
+ \par
+\tab public static void main(String[] args) \{\par
+\tab\par
+\tab\tab\tab Scanner sc = new Scanner(System.in);\par
+ \par
+\tab\tab\tab System.out.println("Digite um valor :");\par
+\tab\tab\tab int valor = sc.nextInt();\par
+\tab\tab\tab\par
+\tab\tab\tab if(valor<10) \{\par
+\tab\tab\tab\tab System.out.println("N\'e3o \'e9 maior que 10");\par
+\tab\tab\tab\}else if(valor == 10) \{\par
+\tab\tab\tab\tab System.out.println("\'c9 igual a 10");\par
+\tab\tab\tab\}else \{\par
+\tab\tab\tab\tab System.out.println("\'c9 maior que 10");\par
+\tab\tab\tab\}\par
+\tab\tab\tab sc.close();\par
+\tab\tab\}\par
+ \par
+\tab\}\par
+\par
+\b\fs24 15) Ler um valor e escrever se \'e9 positivo ou negativo (considere o valor zero como positivo). \par
+\b0\fs22 package ExercicioFacct;\par
+ \par
+import java.util.Scanner;\par
+ \par
+public class Exercicio15 \{\par
+ \par
+\tab public static void main(String[] args) \{\par
+\tab\par
+\tab\tab Scanner sc = new Scanner(System.in);\par
+\tab\tab\par
+\tab\tab System.out.println("Digite um valor :");\par
+\tab\tab int valor=sc.nextInt();\par
+\tab\tab\par
+\tab\tab if (valor>=0) \{\par
+\tab\tab\tab System.out.println("N\'famero digitado \'e9 positivo");\par
+\tab\tab\} else \{\par
+\tab\tab\tab System.out.println("N\'famero digitado \'e9 negativo");\par
+\tab\tab\}\par
+\tab\tab sc.close();\par
+\tab\}\par
+ \par
+\}\par
+ \par
+\b\fs24 16) As ma\'e7\'e3s custam R$ 1,30 cada se forem compradas menos de uma d\'fazia, e R$ 1,00 se forem compradas pelo menos 12. Escreva um programa que leia o n\'famero de ma\'e7\'e3s compradas, calcule e escreva o custo total da compra. \par
+\b0\fs22 package ExercicioFacct;\par
+ \par
+import java.util.Scanner;\par
+ \par
+public class Exercicio16 \{\par
+ \par
+\tab public static void main(String[] args) \{\par
+ \par
+\tab\tab try \{\par
+\tab\tab Scanner sc = new Scanner(System.in);\par
+\tab\tab System.out.println("Digite a quantidade de ma\'e7as compradas:");\par
+\tab\tab int macas = sc.nextInt();\par
+ \par
+\tab\tab if (macas < 1) \{\par
+\tab\tab\tab System.out.println("Digite o valor da duzia de ma\'e7as");\par
+\tab\tab\} else if (macas < 12) \{\par
+\tab\tab\tab double resultado = macas * 1.3;\par
+\tab\tab\tab System.out.println("Qual o valor a ser pago: R$" + resultado);\par
+ \par
+\tab\tab\} else \{\par
+\tab\tab\tab System.out.println("O valor a ser pago \'e9 : R$" + macas);\par
+\tab\tab\}\par
+\par
+\tab\tab\} catch (Exception e) \{\par
+\tab\tab\tab System.out.println("Digite somente n\'famero total"+e);\par
+\par
+\tab\tab\}\par
+\tab\}\par
+\}\par
+\b\fs24\par
+17) Ler as notas da 1a. e 2a. avalia\'e7\'f5es de um aluno. Calcular a m\'e9dia aritm\'e9tica simples e escrever uma mensagem que diga se o aluno foi ou n\'e3o aprovado (considerar que nota igual ou maior que 6 o aluno \'e9 aprovado). Escrever tamb\'e9m a m\'e9dia calculada. \par
+\b0\fs22 package ExercicioFacct;\par
+ \par
+import java.util.Scanner;\par
+ \par
+public class Exercicio17\{\par
+ \par
+\tab\fs20 public static void main(String[] args) \{\par
+\tab\tab try \{\par
+\tab\tab\tab Scanner sc = new Scanner(System.in);\par
+ \par
+\tab\tab\tab System.out.println("Digite o valor da 1A Nota :");\par
+\tab\tab\tab float nota1 = sc.nextFloat();\par
+\tab\tab\tab System.out.println("Digite o valor da 2A Nota :");\par
+\tab\tab\tab float nota2 = sc.nextFloat();\par
+\tab\tab\tab float media = (nota1 + nota2)/2;\par
+ \par
+\tab\tab\tab if ((media < 0) || (media > 10)) \{\par
+\tab\tab\tab\tab System.out.println("O programa aceita somente n\'fameros entre 0 e 10: ");\par
+\tab\tab\tab\} else if (media >= 6) \{\par
+\tab\tab\tab\tab System.out.println("Aluno(a)foi aprovado(a) com sucesso. Sua m\'e9dia \'e9:" + media);\par
+\tab\tab\tab\} else \{\par
+\tab\tab\tab\tab System.out.println("Aluno(a)foi reprovado(a). Sua m\'e9dia \'e9:" + media);\par
+\tab\tab\tab\}\par
+\tab\tab\tab sc.close();\par
+\tab\tab\tab\} catch (Exception e) \{\par
+\tab\tab\tab\tab System.out.println("A media qualculada \'e9:"+e);\par
+\tab\tab\tab\}\par
+\tab\}\par
+\}\tab\par
+\par
+\b\fs24 18) Ler o ano atual e o ano de nascimento de uma pessoa. Escrever uma mensagem que diga se ela poder\'e1 ou n\'e3o votar este ano (n\'e3o \'e9 necess\'e1rio considerar o m\'eas em que a pessoa nasceu). \tab\b0\fs20  \par
+\fs22 package ExercicioFacct;\par
+ \par
+import java.util.Scanner;\par
+ \par
+ \par
+public class Exercicio18 \{\par
+ \par
+\tab public static void main(String[] args) \{\par
+Scanner sc = new Scanner(System.in);\par
+\tab\tab System.out.println("Digite o ano atual :");\par
+\tab\tab int anoAtual=sc.nextInt();\par
+\tab\tab System.out.println("Digite o seu ano de nascimento:");\par
+\tab\tab int anoNascimento=sc.nextInt();\par
+\tab\tab int idade=anoAtual-anoNascimento;\par
+\tab\tab if (idade>=16) \{\par
+\tab\tab\tab System.out.println("Voc\'ea est\'e1 apta(o) \'e0 votar");\par
+\tab\tab\} else \{\par
+\tab\tab\tab System.out.println("Voc\'ea n\'e3o est\'e1 apta(o) \'e0 votar");\par
+ \par
+\tab\tab\}\par
+\tab\tab sc.close();\par
+\tab\}\par
+ \par
+\}\par
+\par
+\b 19) Ler dois valores (considere que n\'e3o ser\'e3o lidos valores iguais) e escrever o maior deles. \par
+\b0 package ExercicioFacct;\par
+ \par
+import java.util.Scanner;\par
+ \par
+public class Exercicio19 \{\par
+ \par
+\tab public static void main(String[] args) \{\par
+\tab\tab\par
+\tab\tab\tab\par
+\tab\tab\tab Scanner sc = new Scanner(System.in);\par
+\tab\tab\tab\par
+\tab\tab\tab System.out.println("Digite um valor :");\par
+\tab\tab\tab int valor=sc.nextInt();\par
+\tab\tab\tab System.out.println("Digite um valor :");\par
+\tab\tab\tab int valor1=sc.nextInt();\par
+\tab\tab\tab\par
+\tab\tab\tab if (valor>valor1) \{\par
+\tab\tab\tab\tab System.out.println("O maior valor digitado foi :"+valor);\par
+\tab\tab\tab\} else \{\par
+\tab\tab\tab\tab System.out.println("O maior valor digitado foi :"+valor1);\par
+\tab\tab\tab\}\par
+\tab\tab\tab sc.close();\par
+\tab\tab\}\par
+ \par
+\tab\}\fs20\par
+\b\fs24\par
+20) Ler dois valores (considere que n\'e3o ser\'e3o lidos valores iguais) e escrev\'ea-los em ordem crescente. \par
+\b0\fs20\par
+\fs22 package ExercicioFacct;\par
+ \par
+import java.util.Scanner;\par
+ \par
+public class Exercicio20 \{\par
+\tab public static void main(String[] args) \{\par
+\tab\tab\par
+\tab\tab\tab\par
+\tab\tab\tab Scanner sc = new Scanner(System.in);\par
+\tab\tab\tab\par
+\tab\tab\tab System.out.println("Digite um valor :");\par
+\tab\tab\tab int valor=sc.nextInt();\par
+\tab\tab\tab System.out.println("Digite um valor :");\par
+\tab\tab\tab int valor1=sc.nextInt();\par
+\tab\tab\tab\par
+\tab\tab\tab if (valor==valor1) \{\par
+\tab\tab\tab\tab System.out.println("Digite valores diferentes");\par
+\tab\tab\tab\}else if (valor>valor1) \{\par
+\tab\tab\tab\tab System.out.println("O menor valor digitado \'e9 "+valor1+" ,e o maior valor digitado \'e9 "+valor);\par
+\tab\tab\tab\} else \{\par
+\tab\tab\tab\tab System.out.println("O menor valor digitado \'e9 "+valor+" ,e o maior valor digitado \'e9 "+valor1);\par
+\tab\tab\tab\}\par
+\tab\tab\tab sc.close();\par
+\tab\tab\}\par
+ \par
+\tab\}\par
+\b 22) A jornada de trabalho semanal de um funcion\'e1rio \'e9 de 40 horas. O funcion\'e1rio que trabalhar mais de 40 horas receber\'e1 hora extra, cujo c\'e1lculo \'e9 o valor da hora regular com um acr\'e9scimo de 50%. Escreva um algoritmo que leia o n\'famero de horas trabalhadas em um m\'eas, o sal\'e1rio por hora e escrevao sal\'e1rio total do funcion\'e1rio, que dever\'e1 ser acrescido das horas extras, caso tenham sido trabalhadas(considere que o m\'eas possua 4 semanas exatas). \par
+\b0 package ExercicioFacct;\par
+ \par
+import java.util.Scanner;\par
+ \par
+ \par
+public class Exercicio22 \{\par
+ \par
+\tab public static void main(String[] args) \{\par
+\tab\tab Scanner sc = new Scanner(System.in);\par
+ \par
+\tab\tab System.out.println("Digite a quantidade de horas trabalhadas em um m\'eas :");\par
+\tab\tab int quantidadeHorastrabalhadas = sc.nextInt();\par
+ \par
+\tab\tab System.out.println("Digite o valor recebido por cada hora trabalhada :");\par
+\tab\tab float valorHora = sc.nextFloat();\par
+ \par
+\tab\tab if (quantidadeHorastrabalhadas < 161) \{\par
+\tab\tab\tab float salarioFinal = quantidadeHorastrabalhadas * valorHora;\par
+\tab\tab\tab System.out.println("O valor a ser recebido \'e9 : R$" + salarioFinal);\par
+\tab\tab\} else \{\par
+\tab\tab\tab float salarioFinal = (160 * valorHora)+(valorHora + valorHora*50/100);\par
+\tab\tab\tab System.out.printf("O valor a ser recebido \'e9 : R$  %.2f" , salarioFinal);\par
+\tab\tab\}\par
+\tab\tab sc.close();\par
+\tab\}\par
+ \par
+\}\par
+\b\fs24\par
+\par
+23) Para o enunciado a seguir foi elaborado um algoritmo em Portugu\'eas Estruturado que cont\'e9m erros, identifique os erros no algoritmo apresentado abaixo:\par
+Enunciado: Tendo como dados de entrada o nome, a altura e o sexo (M ou F) de uma pessoa, calcule\par
+e mostre seu peso ideal, utilizando as seguintes f\'f3rmulas:\par
+ - para sexo masculino: peso ideal = (72.7 * altura) - 58\par
+ - para sexo feminino: peso ideal = (62.1 * altura) - 44.7\par
+inicio\par
+ler nome\par
+ler sexo\par
+se sexo = M ent\'e3o\par
+peso_ideal \'01 (72.7 * altura) - 58\par
+sen\'e3o\par
+peso_ideal \'01 (62.1 * altura) \endash  44.7\par
+ fim_se\par
+escrever peso_ideal\par
+fim \b0\par
+package ExercicioFacct;\par
+ \par
+import java.util.Scanner;\par
+ \par
+public class Exercicio23 \{\par
+ \par
+\tab public static void main(String[] args) \{\par
+\tab\tab Scanner sc = new Scanner(System.in);\par
+ \par
+\tab\tab double pesoIdeal =0;\par
+ \par
+\tab\tab System.out.println("Digite o seu nome :");\par
+\tab\tab String nome = sc.next();\par
+ \par
+\tab\tab System.out.println("Digite o seu sexo :");\par
+\tab\tab char sexo = sc.next().charAt(0);\par
+ \par
+\tab\tab System.out.println("Digite a sua altura:");\par
+\tab\tab float altura = sc.nextFloat();\par
+ \par
+\tab\tab if ((sexo == 'm')||(sexo=='M')) \{\par
+\tab\tab\tab pesoIdeal = 72.2 * altura - 58;\par
+\tab\tab\tab System.out.println("O peso ideal do(a) " + nome + " \'e9 :" + pesoIdeal);\par
+\tab\tab\} else if ((sexo == 'f')||(sexo=='F')) \{\par
+\tab\tab\tab pesoIdeal = 62.1 * altura - 44.7;\par
+\tab\tab\tab System.out.println("O peso ideal do(a) " + nome + " \'e9 :" + pesoIdeal);\par
+\tab\tab\} else \{\par
+\tab\tab\tab System.out.println("Caracter digitado n\'e3o corresponde a nenhum sexo.");\par
+\tab\tab\}\par
+\tab\tab sc.close();\par
+\tab\}\par
+\}\par
+\par
+\par
+\fs22\par
+\par
+\par
+\fs24  \b\f0\fs22\par
+}
+ 
