@@ -1,0 +1,20 @@
+package ExercicioFacct;
+
+import java.util.Scanner;
+
+public class Exercicio10 {
+
+	public static void main(String[] args) {
+	
+		Scanner sc=new Scanner(System.in);
+		System.out.print("O valor do custo de fabricação do automavel: R$");
+		float valorAutomovel=sc.nextFloat();
+		float distribuidor=valorAutomovel*28/100;
+		float imposto=valorAutomovel*45/100;
+		float custoFinal=valorAutomovel+distribuidor+imposto;
+		System.out.print("O valor do automovel corresponde a: R$"+custoFinal);
+		sc.close();
+
+	}
+
+}
