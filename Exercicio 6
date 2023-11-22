@@ -1,0 +1,22 @@
+package ExercicioFacct;
+
+import java.util.Scanner;
+
+public class Exercicio6 {
+	
+	public static void man(String[]args) {
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Digite o valor da base do retângulo:");
+		double valor1=sc.nextDouble();
+		
+		System.out.println("Digite o valor da altura do retângulo:");
+		double valor2=sc.nextDouble();
+		double area=valor1*valor2;
+		 
+		System.out.println("A área do seu retãngulo é:" +area);
+		 sc.close();
+	}
+	
+
+}
