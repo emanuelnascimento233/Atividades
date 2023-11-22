@@ -1,0 +1,23 @@
+package ExercicioFacct;
+
+import java.util.Scanner;
+
+public class Exercicios9 {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Digite o seu salario mensal atual: R$");
+		float salario =sc.nextFloat();
+		System.out.print("Digite a porcentagem % de reajuste do seu salario:");
+		float porcentagem =sc.nextFloat();
+		float aumentoReal=salario*porcentagem/100;
+		float salarioFinal=aumentoReal+salario;
+		System.out.print("O valor do novo salario é: R$" +salarioFinal);
+		sc.close();
+		
+		
+
+	}
+
+}
